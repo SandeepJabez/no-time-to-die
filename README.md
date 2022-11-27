@@ -4,11 +4,10 @@
 </div>
 
 <p align="center">
-  <a href="#dart-about">Documentation</a> &#xa0; | &#xa0;
-  <a href="#rocket-main-technologies">Flask Project</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-requirements">Jupyter Notebook</a> &#xa0; | &#xa0;
-  <a href="#checkered_flag-starting">Tableau Dashboard</a> &#xa0; | &#xa0;
-  <a href="https://github.com/maurodesouza/profile-readme-generator/blob/main/.github/CONTRIBUTING.md">Contributing</a>
+  <a href="https://github.com/SandeepJabez/no-time-to-die/tree/master/Documentation">Documentation</a> &#xa0; | &#xa0;
+  <a href="https://github.com/SandeepJabez/no-time-to-die/tree/master/Flask%20Project">Flask Project</a> &#xa0; | &#xa0;
+  <a href="https://github.com/SandeepJabez/no-time-to-die/tree/master/Notebook">Jupyter Notebook</a> &#xa0; | &#xa0;
+  <a href="Documentation/Dashboard.png">Tableau Dashboard</a> &#xa0; | &#xa0;
 </p>
 
 ## About ##
@@ -27,3 +26,11 @@ The goal of this project is to come up with a model that can accurately predict 
   <h2> PowerBI Screenshot </h2>
   <img src="Flask Project/static/img/Dashboard.png" width="900" alt="Profile Readme Generator"/>
 </div>
+
+<h4 align = "center"> Contributors </h2>
+<p align="center">
+  <a href="https://github.com/Akshay0714">Akshay</a> &#xa0; | &#xa0;
+  <a href="https://github.com/XANDOOM">Ansh</a> &#xa0; | &#xa0;
+  <a href="https://github.com/nsblackK">Nirmalya</a> &#xa0; | &#xa0;
+  <a href="https://github.com/SandeepJabez">Sandeep</a> &#xa0; | &#xa0;
+</p>
