@@ -16,8 +16,6 @@ The goal of this project is to come up with a model that can accurately predict 
 
 <div align="center" id="top">
   <img src="Flask Project/static/img/img1.jpeg" width="900" alt="Profile Readme Generator" />
-
-  <a href="https://profile-readme-generator.com">Web App</a>
   
   <img src="Flask Project/static/img/img2.jpeg" width="900" alt="Profile Readme Generator" />
 </div>
