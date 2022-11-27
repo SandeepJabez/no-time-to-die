@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>no time to die</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  {% block header %}
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="url_for('static', filename='css/bootstrap.css')">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.ico" rel="apple-touch-icon">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="url_for('static', filename='https://fonts.gstatic.com')">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="{{url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <!-- <link href="{{url_for('static', filename='vendor/aos/aos.css')}}" rel="stylesheet"> -->
+  <link href="{{url_for('static', filename='vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="{{url_for('static', filename='vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+
+  <link type="text/css" rel="assets/css/aos.css">
+  <!-- <link type="" rel="stylesheet" href="url_for('static', filename='vendor/aos/aos.css')"> -->
+  <link type="text/css" rel="stylesheet" href="url_for('static', filename='vendor/aos/aos.css')">
+  <script src="assets/js/aos.js"></script>
+  <script src="url_for('static', filename='vendor/aos/aos.js')"></script>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>no time to die<span>.</span></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        </ul>
+        </li>
+
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <script src="js/bootstrap.min.js"></script>
+  {% endblock %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+
+    <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+
+            <h2 data-aos="fade-down">Life Expectancy <span>Prediction</span></h2>
+            <p data-aos="fade-up">Life Expectancy is the average number of years of life lived by someone who has
+              reached a certain age. The benefit of knowing life expectancy is to evaluate the performance of the
+              government in improving the welfare of the population in general and improving health status in
+              particular.</p>
+            <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Predict!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <div class="carousel-item active" style="background-image: url(static/img/hero-carousel/c5.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(static/img/hero-carousel/c2.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(static/img/hero-carousel/c3.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(static/img/hero-carousel/c4.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(static/img/hero-carousel/c5.jpg)"></div>
+
+      
+
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Get Started Section ======= -->
+    <section id="get-started" class="get-started section-bg">
+      <div class="container">
+
+        <div class="row justify-content-between gy-4">
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+            <div class="content">
+              <h3>Best Life Expectancy Predictor in the Market!</h3>
+              <form action="/predict" method="POST">
+                <label for="Income composition of resources">Income composition of resources</label>
+                <input class="form-control" type="text" id="Income composition of resources"
+                  name="Income composition of resources" placeholder="Income composition of resources">
+                <br>
+
+                <label for="country">Country</label>
+                <select name="country" class="form-control" id="country">
+                  <option value="1">Afghanistan</option>
+                  <option value="2">Albania</option>
+                  <option value="3">Algeria</option>
+                  <option value="4">Angola</option>
+                  <option value="5">Antigua and Barbuda</option>
+                  <option value="6">Argentina</option>
+                  <option value="7">Armenia</option>
+                  <option value="8">Australia</option>
+                  <option value="9">Austria</option>
+                  <option value="10">Azerbaijan</option>
+                  <option value="11">Bahamas</option>
+                  <option value="12">Bahrain</option>
+                  <option value="13">Bangladesh</option>
+                  <option value="14">Barbados</option>
+                  <option value="15">Belarus</option>
+                  <option value="16">Belgium</option>
+                  <option value="17">Belize</option>
+                  <option value="18">Benin</option>
+                  <option value="19">Bhutan</option>
+                  <option value="20">Bolivia (Plurinational State of)</option>
+                  <option value="21">Bosnia and Herzegovina</option>
+                  <option value="22">Botswana</option>
+                  <option value="23">Brazil</option>
+                  <option value="24">Brunei Darussalam</option>
+                  <option value="25">Bulgaria</option>
+                  <option value="26">Burkina Faso</option>
+                  <option value="27">Burundi</option>
+                  <option value="28">Côte d'Ivoire</option>
+                  <option value="29">Cabo Verde</option>
+                  <option value="30">Cambodia</option>
+                  <option value="31">Cameroon</option>
+                  <option value="32">Canada</option>
+                  <option value="33">Central African Republic</option>
+                  <option value="34">Chad</option>
+                  <option value="35">Chile</option>
+                  <option value="36">China</option>
+                  <option value="37">Colombia</option>
+                  <option value="38">Comoros</option>
+                  <option value="39">Congo</option>
+                  <option value="40">Cook Islands</option>
+                  <option value="41">Costa Rica</option>
+                  <option value="42">Croatia</option>
+                  <option value="43">Cuba</option>
+                  <option value="44">Cyprus</option>
+                  <option value="45">Czechia</option>
+                  <option value="46">Democratic People's Republic of Korea</option>
+                  <option value="47">Democratic Republic of the Congo</option>
+                  <option value="48">Denmark</option>
+                  <option value="49">Djibouti</option>
+                  <option value="50">Dominica</option>
+                  <option value="51">Dominican Republic</option>
+                  <option value="52">Ecuador</option>
+                  <option value="53">Egypt</option>
+                  <option value="54">El Salvador</option>
+                  <option value="55">Equatorial Guinea</option>
+                  <option value="56">Eritrea</option>
+                  <option value="57">Estonia</option>
+                  <option value="58">Ethiopia</option>
+                  <option value="59">Fiji</option>
+                  <option value="60">Finland</option>
+                  <option value="61">France</option>
+                  <option value="62">Gabon</option>
+                  <option value="63">Gambia</option>
+                  <option value="64">Georgia</option>
+                  <option value="65">Germany</option>
+                  <option value="66">Ghana</option>
+                  <option value="67">Greece</option>
+                  <option value="68">Grenada</option>
+                  <option value="69">Guatemala</option>
+                  <option value="70">Guinea</option>
+                  <option value="71">Guinea-Bissau</option>
+                  <option value="72">Guyana</option>
+                  <option value="73">Haiti</option>
+                  <option value="74">Honduras</option>
+                  <option value="75">Hungary</option>
+                  <option value="76">Iceland</option>
+                  <option value="77">India</option>
+                  <option value="78">Indonesia</option>
+                  <option value="79">Iran (Islamic Republic of)</option>
+                  <option value="80">Iraq</option>
+                  <option value="81">Ireland</option>
+                  <option value="82">Israel</option>
+                  <option value="83">Italy</option>
+                  <option value="84">Jamaica</option>
+                  <option value="85">Japan</option>
+                  <option value="86">Jordan</option>
+                  <option value="87">Kazakhstan</option>
+                  <option value="88">Kenya</option>
+                  <option value="89">Kiribati</option>
+                  <option value="90">Kuwait</option>
+                  <option value="91">Kyrgyzstan</option>
+                  <option value="92">Lao People's Democratic Republic</option>
+                  <option value="93">Latvia</option>
+                  <option value="94">Lebanon</option>
+                  <option value="95">Lesotho</option>
+                  <option value="96">Liberia</option>
+                  <option value="97">Libya</option>
+                  <option value="98">Lithuania</option>
+                  <option value="99">Luxembourg</option>
+                  <option value="100">Madagascar</option>
+                  <option value="101">Malawi</option>
+                  <option value="102">Malaysia</option>
+                  <option value="103">Maldives</option>
+                  <option value="104">Mali</option>
+                  <option value="105">Malta</option>
+                  <option value="106">Marshall Islands</option>
+                  <option value="107">Mauritania</option>
+                  <option value="108">Mauritius</option>
+                  <option value="109">Mexico</option>
+                  <option value="110">Micronesia (Federated States of)</option>
+                  <option value="111">Monaco</option>
+                  <option value="112">Mongolia</option>
+                  <option value="113">Montenegro</option>
+                  <option value="114">Morocco</option>
+                  <option value="115">Mozambique</option>
+                  <option value="116">Myanmar</option>
+                  <option value="117">Namibia</option>
+                  <option value="118">Nauru</option>
+                  <option value="119">Nepal</option>
+                  <option value="120">Netherlands</option>
+                  <option value="121">New Zealand</option>
+                  <option value="122">Nicaragua</option>
+                  <option value="123">Niger</option>
+                  <option value="124">Nigeria</option>
+                  <option value="125">Niue</option>
+                  <option value="126">Norway</option>
+                  <option value="127">Oman</option>
+                  <option value="128">Pakistan</option>
+                  <option value="129">Palau</option>
+                  <option value="130">Panama</option>
+                  <option value="131">Papua New Guinea</option>
+                  <option value="132">Paraguay</option>
+                  <option value="133">Peru</option>
+                  <option value="134">Philippines</option>
+                  <option value="135">Poland</option>
+                  <option value="136">Portugal</option>
+                  <option value="137">Qatar</option>
+                  <option value="138">Republic of Korea</option>
+                  <option value="139">Republic of Moldova</option>
+                  <option value="140">Romania</option>
+                  <option value="141">Russian Federation</option>
+                  <option value="142">Rwanda</option>
+                  <option value="143">Saint Kitts and Nevis</option>
+                  <option value="144">Saint Lucia</option>
+                  <option value="145">Saint Vincent and the Grenadines</option>
+                  <option value="146">Samoa</option>
+                  <option value="147">San Marino</option>
+                  <option value="148">Sao Tome and Principe</option>
+                  <option value="149">Saudi Arabia</option>
+                  <option value="150">Senegal</option>
+                  <option value="151">Serbia</option>
+                  <option value="152">Seychelles</option>
+                  <option value="153">Sierra Leone</option>
+                  <option value="154">Singapore</option>
+                  <option value="155">Slovakia</option>
+                  <option value="156">Slovenia</option>
+                  <option value="157">Solomon Islands</option>
+                  <option value="158">Somalia</option>
+                  <option value="159">South Africa</option>
+                  <option value="160">South Sudan</option>
+                  <option value="161">Spain</option>
+                  <option value="162">Sri Lanka</option>
+                  <option value="163">Sudan</option>
+                  <option value="164">Suriname</option>
+                  <option value="165">Swaziland</option>
+                  <option value="166">Sweden</option>
+                  <option value="167">Switzerland</option>
+                  <option value="168">Syrian Arab Republic</option>
+                  <option value="169">Tajikistan</option>
+                  <option value="170">Thailand</option>
+                  <option value="171">The former Yugoslav republic of Macedonia</option>
+                  <option value="172">Timor-Leste</option>
+                  <option value="173">Togo</option>
+                  <option value="174">Tonga</option>
+                  <option value="175">Trinidad and Tobago</option>
+                  <option value="176">Tunisia</option>
+                  <option value="177">Turkey</option>
+                  <option value="178">Turkmenistan</option>
+                  <option value="179">Tuvalu</option>
+                  <option value="180">Uganda</option>
+                  <option value="181">Ukraine</option>
+                  <option value="182">United Arab Emirates</option>
+                  <option value="183">United Kingdom of Great Britain and Northern Ireland</option>
+                  <option value="184">United Republic of Tanzania</option>
+                  <option value="185">United States of America</option>
+                  <option value="186">Uruguay</option>
+                  <option value="187">Uzbekistan</option>
+                  <option value="188">Vanuatu</option>
+                  <option value="189">Venezuela (Bolivarian Republic of)</option>
+                  <option value="190">Viet Nam</option>
+                  <option value="191">Yemen</option>
+                  <option value="192">Zambia</option>
+                  <option value="193">Zimbabwe</option>
+
+
+                </select>
+                <br>
+
+                <label for="Adult Mortality">Adult Mortality</label>
+                <input class="form-control" type="text" id="Adult Mortality" name="Adult Mortality"
+                  placeholder="Adult Mortality">
+                <br>
+
+
+            </div>
+          </div>
+
+
+          <div class="col-lg-5" data-aos="fade" style="padding-top:4cm ;">
+            <br>
+            <label for="BMI">BMI</label>
+            <input class="form-control" type="text" id="BMI" name="BMI" placeholder="BMI">
+            <br>
+            <label for="HIV/AIDS">HIV/AIDS</label>
+            <input class="form-control" type="text" id="HIV/AIDS" name="HIV/AIDS" placeholder="HIV/AIDS">
+            <br>
+
+
+            <label for="Schooling">Schooling</label>
+            <input class="form-control" type="text" id="Schooling" name="Schooling" placeholder="Schooling">
+            <br>
+
+
+
+
+
+          </div><!-- End Quote Form -->
+          <input class="btn btn-primary mb-2" type="submit" value="Submit">
+          </form>
+        </div>
+
+      </div>
+    </section><!-- End Get Started Section -->
+
+
+
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="recent-blog-posts" class="recent-blog-posts">
+      <div class="container" data-aos="fade-up"">
+
+        <div class=" section-header">
+        <h2> Predicted Life Expectancy</h2>
+        <br>
+        <p>We are very delighted to inform you that you only have predicted life expectancy with you</p>
+        <p> Your Life Expectancy will be:</p>
+
+
+        <h4 class='pred'> {{ prediction_text }} </h4>
+      </div>
+
+
+
+
+      <!-- ======= Features Section ======= -->
+      <section id="features" class="features section-bg">
+        <div class="container" data-aos="fade-up">
+
+          <div class="tab-content">
+            <div class="tab-pane active show" id="tab-1">
+              <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                  data-aos="fade-up" data-aos-delay="100">
+                  <h3>Optimising Life expectancy of a Country</h3>
+                  <p class="fst-italic">
+                    The life expectancy of a country is the average number of years a newborn infant could expect to live if
+                    prevailing patterns of mortality at the time of its birth were to stay the same throughout its life.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-all"></i>With appropriate measure and self care, people can improve their expectancy rate.</li>
+                    <li><i class="bi bi-check2-all"></i> An ideal BMI is known to be between 18.5 and 24.9</li>
+                    <li><i class="bi bi-check2-all"></i> There is huge scope for government intervention as loss of years from life expectancy lead to huge opportunity cost to the nation.</li>
+                      nulla pariatur.</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                  <img src="{{url_for('static', filename='/img/important1.jpeg')}}" alt="" class="img-fluid">
+                 
+                </div>
+              </div>
+            </div><!-- End tab content item -->
+
+          
+
+            
+          </div>
+
+        </div>
+      </section><!-- End Features Section -->
+
+
+
+
+
+
+
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Straw Hats</h3>
+              <p>
+                5 BSc Data Science <br>
+                Too cool to have an address!<br><br>
+                <strong>Phone:</strong> +91 7420696942<br>
+                <strong>Email:</strong> who@whoasked.com<br>
+              </p>
+              <div class="social-links d-flex mt-3">
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End footer info column-->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Straw Hat Coders</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by Straw Hat Enterprise
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+  <script src="{{url_for('static', filename='/vendor/bootstrap.js')}}"></script>
+  <script src="{{url_for('static', filename='/vendor/aos/aos.js')}}"></script>
+  <script src="{{url_for('static', filename='/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{url_for('static', filename='/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{url_for('static', filename='/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/vendor/php-email-form/validate.js')}}"></script>
+
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="{{url_for('static', filename='/js/main.js')}}"></script>
+
+
+</body>
+
+</html>
