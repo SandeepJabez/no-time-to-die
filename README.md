@@ -12,7 +12,7 @@
 
 ## About ##
 
-The goal of this project is to come up with a model that can accurately predict the life expectancy of a given Country based on some of the features, that is classifications and measurements of key statistics of the country. The data set provides 21 variables that could possibly be used to predict the life expectancy of the country. The idea is to first figure out and focus on the key factors that affect the life expectancy as not all variables hold equal weightage. Moreover, there might be certain variables that are completely irrelevant or may just carry inaccurate data that is far from useful.
+The goal of this project is to come up with a model that can accurately predict the life expectancy of a given Country based on some of the features, that is, classifications and measurements of key statistics of the country. The data set provides 21 variables that could be used to predict the country's life expectancy. The idea is first to figure out and focus on the key factors that affect life expectancy, as not all variables hold equal weightage. Moreover, certain variables might be completely irrelevant or may just carry inaccurate data that is far from useful.
 
 <div align="center" id="top">
   <img src="Flask Project/static/img/img1.jpeg" width="900" alt="Profile Readme Generator" />
